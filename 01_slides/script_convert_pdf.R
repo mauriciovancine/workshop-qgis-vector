@@ -13,6 +13,6 @@ library(R.utils)
 # convert to pdf
 setwd("01_slides/")
 pagedown::chrome_print("slides_workshop_qgis.Rmd", timeout = 1e5)
-
+R.utils::compressPDF("slides_workshop_qgis.pdf")
 
 # end ---------------------------------------------------------------------
